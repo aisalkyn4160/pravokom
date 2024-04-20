@@ -1,0 +1,110 @@
+.advantages{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    padding: 90px 0;
+}
+
+.advantages h2{
+    text-align: center;
+}
+
+.ttl-desc{
+    max-width: 488px;
+    text-align: center;
+    margin: 0 auto 50px;
+}
+
+.advantages-list{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.advantages-list li{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    background-image: url('../assets/icons/Subtract-adv.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 50px 95px;
+}
+.advantages-list span{
+    flex-shrink: 0;
+    font-family: 'Palatino Linotype';
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    color: rgba(33, 32, 32, 1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 139px;
+    height: 139px;
+    border-radius: 50%;
+    background: rgba(192, 192, 192, 1);
+    position: relative;
+}
+.advantages-list span::after{
+    content: '';
+    display: block;
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+    background: rgba(192, 192, 192, .1);
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translateY(-50%);
+}
+.advantages-list span:nth-child(2n)::after{
+    left: 50px;
+}
+.advantages-text p{
+    max-width: 821px;
+    text-align: left;
+    margin-top: 15px;
+}
+
+@media (max-width: 750px) {
+    .advantages-list li{
+        flex-direction: column;
+        align-items: flex-start;
+        background-image: url(../assets/icons/services-item-border.png);
+    }
+    .advantages-list li:nth-child(2n){
+        flex-direction: column-reverse;
+        align-items: flex-end;
+    }
+}
+@media (max-width: 590px) {
+    .advantages{
+        padding: 40px 0;
+    }
+    .advantages-list{
+        gap: 26px;
+    }
+    .advantages-list li{
+        padding: 20px;
+        padding-top: 10px;
+        gap: 20px;
+    }
+    .advantages-text p{
+        margin-top: 10px;
+    }
+    .advantages-list span{
+        font-size: 18px;
+        width: 52px;
+        height: 52px;
+    }
+    .advantages-list span::after{
+        width: 91px;
+        height: 91px;
+        right: 10px;
+    }
+    .advantages-list span:nth-child(2n)::after{
+        left: 10px;
+    }
+}

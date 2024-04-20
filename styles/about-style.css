@@ -1,0 +1,59 @@
+.about{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top right;
+    position: relative;
+}
+
+.about img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+    margin-left: -115px;
+}
+.about-info{
+    width: 50%;
+    margin-left: 45%;
+    padding: 109px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.about-text{
+    max-width: 610px;
+}
+
+@media (max-width: 1050px) {
+    .about{
+        display: flex;
+        flex-direction: column;
+    }
+    .about img{
+        width: 100%;
+        margin-left: 0;
+        position: static;
+        order: 2;
+    }
+    .about .container{
+        width: 100%;
+    }
+    .about-info{
+        width: 100%;
+        margin-left: 0;
+        padding: 40px 0;
+    }
+    .about-text{
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 590px) {
+    .about-info{
+        gap: 20px;
+    }
+    
+}
